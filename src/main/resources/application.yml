@@ -1,0 +1,7 @@
+port: 7998
+
+commands:
+  - name: "kafka_up_status"
+    cmd: "ps -ef|grep kafka|grep -v grep|wc -l"
+    labels:
+      host: "kafka1"
